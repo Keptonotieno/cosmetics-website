@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Beauty - Premium Cosmetics</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="clade.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="showPage('home')">Luxe Beauty</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home-section" onclick="showPage('home')">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#feature-section" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#skincare" onclick="showPage('skincare')">
+                                <i class="fas fa-leaf me-2"></i>Skincare</a></li>
+                            <li><a class="dropdown-item" href="#makeup" onclick="showPage('makeup')">
+                                <i class="fas fa-palette me-2"></i>Makeup</a></li>
+                            <li><a class="dropdown-item" href="#lipstick" onclick="showPage('lipstick')">
+                                <i class="fas fa-kiss me-2"></i>Lipstick</a></li>
+                            <li><a class="dropdown-item" href="#fragrance" onclick="showPage('fragrance')">
+                                <i class="fas fa-spray-can me-2"></i>Fragrance</a></li>
+                
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section" onclick="showPage('about')">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section" onclick="showPage('contact')">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews-section" onclick="showPage('reviews')">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer-section" onclick="showPage('footer')">Footer</a>
+                    </li>
+                </ul>
+                
+                <div class="auth-buttons">
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fas fa-sign-in-alt me-1"></i>Login
+                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+                        <i class="fas fa-user-plus me-1"></i>Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home-section" class="page-section active">
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1>Unleash Your Natural Beauty</h1>
+                            <p>Discover premium cosmetics crafted with the finest ingredients to enhance your unique radiance and boost your confidence.</p>
+                            <div class="mt-4">
+                                <button class="btn btn-light btn-lg me-3" onclick="showPage('makeup')">
+                                    <i class="fas fa-palette me-2"></i>Shop Makeup
+                                </button>
+                                <button class="btn btn-outline-light btn-lg" onclick="showPage('skincare')">
+                                    <i class="fas fa-leaf me-2"></i>Skincare Collection
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Section -->
+         <div id="feature-section" class="page-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Feature Sections</h2>
+                <div class="category-grid">
+                    <div class="product-card" onclick="showPage('skincare')">
+                        <div class="product-image" style="background: linear-gradient(135deg, #a8e6cf, #88d8a3);">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name">Skincare Collection</div>
+                            <p class="text-muted">Nourish and protect your skin with our premium skincare range</p>
+                            <button class="btn btn-primary" onclick="showPage('skincare')">
+                <h2 class="text-center mb-5 animate-on-scroll">Feature Section</h2>
+                <div class="category-grid">
+                    <div class="product-card animate-on-scroll" onclick="showPage('skincare')">
+                        <div class="product-image" style="background: linear-gradient(135deg, #a8e6cf, #88d8a3);">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Skincare Collection</div>
+                            <p class="text-muted">Nourish and protect your skin with our premium skincare range</p>
+                            <button class="btn btn-primary" onclick="showPage('skincare')">
+                                <i class="fas fa-arrow-right me-2"></i>Explore Skincare
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card animate-on-scroll" onclick="showPage('makeup')">
+                        <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Makeup Collection</div>
+                            <p class="text-muted">Express your creativity with professional makeup products</p>
+                            <button class="btn btn-primary" onclick="showPage('makeup')">
+                                <i class="fas fa-arrow-right me-2"></i>Explore Makeup
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card animate-on-scroll" onclick="showPage('lipstick')">
+                        <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                            <i class="fas fa-kiss"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Lipstick Collection</div>
+                            <p class="text-muted">Perfect your pout with our luxurious lipstick range</p>
+                            <button class="btn btn-primary" onclick="showPage('lipstick')">
+                                <i class="fas fa-arrow-right me-2"></i>Explore Lipsticks
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card animate-on-scroll" onclick="showPage('fragrance')">
+                        <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Fragrance Collection</div>
+                            <p class="text-muted">Discover your signature scent with our exquisite perfumes</p>
+                            <button class="btn btn-primary" onclick="showPage('fragrance')">
+                                <i class="fas fa-arrow-right me-2"></i>Explore Fragrances
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Fragrance Collection</div>
+                                </section>
+                            </div>
+                        <div class="page-content">
+                      </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+     </div>
+</div>
+  </div>
+ </div>
+    
+    <!-- Skincare Page -->
+    <div id="skincare-section" class="page-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Skincare Collection</h1>
+                <p class="lead">Nourish, protect, and revitalize your skin with our premium skincare range</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8e6cf, #88d8a3);">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Hydrating Serum</div>
+                        <div class="product-price">$32.99</div>
+                        <p class="text-muted">Deep moisturizing formula with hyaluronic acid</p>
+                        <button class="order-btn" onclick="placeOrder('Hydrating Serum', '$32.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffd89b, #19547b);">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">SPF 50 Sunscreen</div>
+                        <div class="product-price">$28.99</div>
+                        <p class="text-muted">Advanced UV protection for all skin types</p>
+                        <button class="order-btn" onclick="placeOrder('SPF 50 Sunscreen', '$28.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #c3cfe2, #667eea);">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Anti-Aging Cream</div>
+                        <div class="product-price">$45.99</div>
+                        <p class="text-muted">Reduces fine lines and wrinkles effectively</p>
+                        <button class="order-btn" onclick="placeOrder('Anti-Aging Cream', '$45.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #c3cfe2, #667eea);">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Anti-Aging Cream</div>
+                        <div class="product-price">$45.99</div>
+                        <p class="text-muted">Reduces fine lines and wrinkles effectively</p>
+                        <button class="order-btn" onclick="placeOrder('Anti-Aging Cream', '$45.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #c3cfe2, #667eea);">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Anti-Aging Cream</div>
+                        <div class="product-price">$45.99</div>
+                        <p class="text-muted">Reduces fine lines and wrinkles effectively</p>
+                        <button class="order-btn" onclick="placeOrder('Anti-Aging Cream', '$45.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #c3cfe2, #667eea);">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Anti-Aging Cream</div>
+                        <div class="product-price">$45.99</div>
+                        <p class="text-muted">Reduces fine lines and wrinkles effectively</p>
+                        <button class="order-btn" onclick="placeOrder('Anti-Aging Cream', '$45.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #c3cfe2, #667eea);">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Anti-Aging Cream</div>
+                        <div class="product-price">$45.99</div>
+                        <p class="text-muted">Reduces fine lines and wrinkles effectively</p>
+                        <button class="order-btn" onclick="placeOrder('Anti-Aging Cream', '$45.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #c3cfe2, #667eea);">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Anti-Aging Cream</div>
+                        <div class="product-price">$45.99</div>
+                        <p class="text-muted">Reduces fine lines and wrinkles effectively</p>
+                        <button class="order-btn" onclick="placeOrder('Anti-Aging Cream', '$45.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <i class="fas fa-soap"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Gentle Cleanser</div>
+                        <div class="product-price">$24.99</div>
+                        <p class="text-muted">Perfect for sensitive and all skin types</p>
+                        <button class="order-btn" onclick="placeOrder('Gentle Cleanser', '$24.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+             </div>
+         </div>
+    </div>
+</div>
+ </div>
+ </div>
+    
+
+
+
+    <!-- Makeup Page -->
+    <div id="makeup-section" class="page-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Makeup Collection</h1>
+                <p class="lead">Express your creativity with our professional makeup range</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eye Shadow Palette</div>
+                        <div class="product-price">$42.99</div>
+                        <p class="text-muted">12 vibrant shades with rich pigmentation</p>
+                        <button class="order-btn" onclick="placeOrder('Eye Shadow Palette', '$42.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                  <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eye Shadow Palette</div>
+                        <div class="product-price">$42.99</div>
+                        <p class="text-muted">12 vibrant shades with rich pigmentation</p>
+                        <button class="order-btn" onclick="placeOrder('Eye Shadow Palette', '$42.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                  <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eye Shadow Palette</div>
+                        <div class="product-price">$42.99</div>
+                        <p class="text-muted">12 vibrant shades with rich pigmentation</p>
+                        <button class="order-btn" onclick="placeOrder('Eye Shadow Palette', '$42.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffd89b, #19547b);">
+                        <i class="fas fa-blush"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Blush Duo</div>
+                        <div class="product-price">$29.99</div>
+                        <p class="text-muted">Soft and blendable formula for a natural flush</p>
+                        <button class="order-btn" onclick="placeOrder('Blush Duo', '$29.99')">
+                             <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                  <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eye Shadow Palette</div>
+                        <div class="product-price">$42.99</div>
+                        <p class="text-muted">12 vibrant shades with rich pigmentation</p>
+                        <button class="order-btn" onclick="placeOrder('Eye Shadow Palette', '$42.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                  <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eye Shadow Palette</div>
+                        <div class="product-price">$42.99</div>
+                        <p class="text-muted">12 vibrant shades with rich pigmentation</p>
+                        <button class="order-btn" onclick="placeOrder('Eye Shadow Palette', '$42.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                  <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eye Shadow Palette</div>
+                        <div class="product-price">$42.99</div>
+                        <p class="text-muted">12 vibrant shades with rich pigmentation</p>
+                        <button class="order-btn" onclick="placeOrder('Eye Shadow Palette', '$42.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                  <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eye Shadow Palette</div>
+                        <div class="product-price">$42.99</div>
+                        <p class="text-muted">12 vibrant shades with rich pigmentation</p>
+                        <button class="order-btn" onclick="placeOrder('Eye Shadow Palette', '$42.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                  <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa8cc, #ff8fab);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eye Shadow Palette</div>
+                        <div class="product-price">$42.99</div>
+                        <p class="text-muted">12 vibrant shades with rich pigmentation</p>
+                        <button class="order-btn" onclick="placeOrder('Eye Shadow Palette', '$42.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffd89b, #19547b);">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Foundation</div>
+                        <div class="product-price">$36.99</div>
+                        <p class="text-muted">Full coverage formula for flawless finish</p>
+                        <button class="order-btn" onclick="placeOrder('Foundation', '$36.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8e6cf, #88d8a3);">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Volume Mascara</div>
+                        <div class="product-price">$22.99</div>
+                        <p class="text-muted">Dramatic volume and length for lashes</p>
+                        <button class="order-btn" onclick="placeOrder('Volume Mascara', '$22.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Golden Highlighter</div>
+                        <div class="product-price">$28.99</div>
+                        <p class="text-muted">Perfect golden glow for any occasion</p>
+                        <button class="order-btn" onclick="placeOrder('Golden Highlighter', '$28.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Lipstick Page -->
+    <div id="lipstick-section" class="page-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Lipstick Collection</h1>
+                <p class="lead">Perfect your pout with our luxurious lipstick range</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+                        <i class="fas fa-kiss"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Matte Lipstick</div>
+                        <div class="product-price">$19.99</div>
+                        <p class="text-muted">Long-lasting matte finish in bold colors</p>
+                        <button class="order-btn" onclick="placeOrder('Matte Lipstick', '$19.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+        
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+
+                 <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                        <i class="fas fa-lips"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Glossy Lip Balm</div>
+                        <div class="product-price">$14.99</div>
+                        <p class="text-muted">Hydrating formula with a glossy finish</p>
+                        <button class="order-btn" onclick="placeOrder('Glossy Lip Balm', '$14.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+    <!-- Fragrance Page -->
+    <div id="fragrance-section" class="page-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Fragrance Collection</h1>
+                <p class="lead">Discover your signature scent with our exquisite perfumes</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <img src="imma2..jpeg" alt="Eau de Parfum">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eau de Parfum</div>
+                        <div class="product-price">$59.99</div>
+                        <p class="text-muted">Long-lasting fragrance with floral notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Parfum', '$59.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                    <img src="imma3..jpeg" alt="Eau de Parfum">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eau de Toilette</div>
+                        <div class="product-price">$49.99</div>
+                        <p class="text-muted">Refreshing scent with citrus notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Toilette', '$49.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+
+                    <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <img src="imma4..jpeg" alt="Eau de Parfum">
+                    </div>
+                     <div class="product-info">
+                        <div class="product-name">Eau de Parfum</div>
+                        <div class="product-price">$59.99</div>
+                        <p class="text-muted">Long-lasting fragrance with floral notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Parfum', '$59.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                 </div>
+
+                    <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <img src="imma5..jpeg" alt="Eau de Parfum">
+                    </div>
+                     <div class="product-info">
+                        <div class="product-name">Eau de Parfum</div>
+                        <div class="product-price">$59.99</div>
+                        <p class="text-muted">Long-lasting fragrance with floral notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Parfum', '$59.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                 </div>
+
+
+                    <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                    <img src="imma6..jpeg" alt="Eau de Parfum">
+                    </div>
+
+                     <div class="product-info">
+                        <div class="product-name">Eau de Parfum</div>
+                        <div class="product-price">$59.99</div>
+                        <p class="text-muted">Long-lasting fragrance with floral notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Parfum', '$59.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+
+                    </div>
+                    <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <img src="imma7.jpeg" alt="Eau de Parfum">
+                    </div>
+                     <div class="product-info">
+                        <div class="product-name">Eau de Parfum</div>
+                        <div class="product-price">$59.99</div>
+                        <p class="text-muted">Long-lasting fragrance with floral notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Parfum', '$59.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                    </div>
+                    <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <img src="imma5.jpeg" alt="Eau de Toilette">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eau de Toilette</div>
+                        <div class="product-price">$49.99</div>
+                        <p class="text-muted">Refreshing scent with citrus notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Toilette', '$49.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eau de Toilette</div>
+                        <div class="product-price">$49.99</div>
+                        <p class="text-muted">Refreshing scent with citrus notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Toilette', '$49.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eau de Toilette</div>
+                        <div class="product-price">$49.99</div>
+                        <p class="text-muted">Refreshing scent with citrus notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Toilette', '$49.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                        <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <img src="imma1.jgj.jpeg" alt="Eau de Toilette">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eau de Toilette</div>
+                        <div class="product-price">$49.99</div>
+                        <p class="text-muted">Refreshing scent with citrus notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Toilette', '$49.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eau de Toilette</div>
+                        <div class="product-price">$49.99</div>
+                        <p class="text-muted">Refreshing scent with citrus notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Toilette', '$49.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8caba, #5d9cec);">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Eau de Toilette</div>
+                        <div class="product-price">$49.99</div>
+                        <p class="text-muted">Refreshing scent with citrus notes</p>
+                        <button class="order-btn" onclick="placeOrder('Eau de Toilette', '$49.99')">
+                            <i class="fas fa-shopping-cart me-2"></i>Place Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+     <!-- About Page -->
+    <div id="about-section" class="page-section">
+        <div class="about-hero">
+            <div class="container">
+                <h1 class="display-4">About Luxe Beauty</h1>
+                <p class="lead">Redefining beauty through innovation, quality, and sustainability</p>
+            </div>
+        </div>
+        
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Natural Ingredients</h4>
+                        <p>We use only the finest natural and organic ingredients in our formulations, ensuring safety and effectiveness for all skin types.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Cruelty-Free</h4>
+                        <p>All our products are 100% cruelty-free. We believe in beauty without compromise and never test on animals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h4>Sustainable</h4>
+                        <p>Our commitment to the environment includes sustainable packaging and eco-friendly manufacturing processes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2020, Luxe Beauty emerged from a passion for creating premium cosmetics that enhance natural beauty while maintaining ethical standards. Our founders, experienced in both cosmetic science and sustainable business practices, set out to revolutionize the beauty industry.</p>
+                    <p>Today, we're proud to offer a comprehensive range of skincare, makeup, and fragrance products that cater to diverse beauty needs and preferences. Every product is carefully crafted with attention to detail and a commitment to excellence.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Our Mission</h3>
+                    <p>To empower individuals to express their unique beauty through high-quality, ethically-made cosmetic products. We believe that true beauty comes from confidence, and our products are designed to help you feel your absolute best.</p>
+                    <p>We're committed to continuous innovation, sustainable practices, and creating products that not only make you look beautiful but also feel good about using them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                 <!-- Contact Page -->
+    <div id="contact-section" class="page-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Contact Us</h1>
+                <p class="lead">We'd love to hear from you. Get in touch with our team!</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Send us a Message</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-control" id="subject">
+                                    <option>Product Inquiry</option>
+                                    <option>Order Support</option>
+                                    <option>General Question</option>
+                                    <option>Feedback</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Get in Touch</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Address</h5>
+                                <p>123 Beauty Lane<br>Style City, SC 12345<br>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+254 700 830 335</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p><a href="#">infoluxe@gmail</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5>Business Hours</h5>
+                                <p>Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM<br>Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Reviews Page -->
+    <div id="reviews-section" class="page-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Customer Reviews</h1>
+                <p class="lead">See what our customers are saying about our products</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The hydrating serum is absolutely amazing! My skin has never felt smoother and more radiant. I've been using it for 3 months now and the results are incredible."</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">SM</div>
+                            <div>
+                                <strong>Sarah Martinez</strong>
+                                <div class="text-muted">Verified Buyer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Love the matte lipstick collection! The colors are so vibrant and long-lasting. I can wear it all day without needing to reapply. Highly recommended!"</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">JD</div>
+                            <div>
+                                <strong>Jessica Davis</strong>
+                                <div class="text-muted">Verified Buyer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The eye shadow palette exceeded my expectations. The colors blend beautifully and the pigmentation is perfect. Great quality for the price!"</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">MJ</div>
+                            <div>
+                                <strong>Maria Johnson</strong>
+                                <div class="text-muted">Verified Buyer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>"The fragrance collection is wonderful. Night Mystery has become my signature scent. It's sophisticated and lasts all evening. Will definitely purchase again!"</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">LW</div>
+                            <div>
+                                <strong>Lisa Wilson</strong>
+                                <div class="text-muted">Verified Buyer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Excellent customer service and fast shipping. The anti-aging cream has made a noticeable difference in my skin texture. Very happy with my purchase!"</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">AB</div>
+                            <div>
+                                <strong>Amanda Brown</strong>
+                                <div class="text-muted">Verified Buyer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The foundation gives perfect coverage without feeling heavy. It matches my skin tone perfectly and lasts all day. Best foundation I've ever used!"</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">RT</div>
+                            <div>
+                                <strong>Rachel Thompson</strong>
+                                <div class="text-muted">Verified Buyer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-primary btn-lg">Write a Review</button>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer-section" class="page-section">
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Luxe Beauty</h5>
+                    <p>Premium cosmetics crafted with the finest ingredients to enhance your natural beauty.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <a href="#home-section" onclick="showPage('home')">Home</a>
+                    <a href="#about-section" onclick="showPage('about')">About Us</a>
+                    <a href="#contact-section" onclick="showPage('contact')">Contact</a>
+                    <a href="#reviews-section" onclick="showPage('reviews')">Reviews</a>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Products</h5>
+                    <a href="#skincare-section" onclick="showPage('skincare')">Skincare</a>
+                    <a href="#makeup-section" onclick="showPage('makeup')">Makeup</a>
+                    <a href="#lipstick-section" onclick="showPage('lipstick')">Lipstick</a>
+                    <a href="#fragrance-section" onclick="showPage('fragrance')">Fragrance</a>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Customer Service</h5>
+                    <a href="#shipping-section">Shipping Info</a>
+                    <a href="#returns-section">Returns</a>
+                    <a href="#size-guide-section">Size Guide</a>
+                    <a href="#faq-section">FAQ</a>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Luxe Beauty. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> for beauty enthusiasts</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Forgot Password?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+    //Custom JavaScript can be added here
+function showPage(pageName) {
+    // Hide all sections
+    document.querySelectorAll('.page-section').forEach(function(section) {
+        section.classList.remove('active');
+    });
+    // Show the selected section
+    var target = document.getElementById(pageName + '-section');
+    if (target) {
+        target.classList.add('active');
+        window.scrollTo(0, 0); // Optional: scroll to top
+    }
+} 
+// Prevent default form submission and show a message for Login
+document.querySelector('#loginModal form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Login submitted!\nEmail: ' + document.getElementById('email').value);
+    // Optionally, close the modal
+    var loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+    loginModal.hide();
+});
+
+// Prevent default form submission and show a message for Sign Up
+document.querySelector('#signupModal form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Sign Up submitted!\nEmail: ' + document.getElementById('signupEmail').value);
+    // Optionally, close the modal
+    var signupModal = bootstrap.Modal.getInstance(document.getElementById('signupModal'));
+    signupModal.hide();
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Prevent default form submission and show a message for Login
+    document.querySelector('#loginModal form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Login submitted!\nEmail: ' + document.getElementById('email').value);
+        var loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+        loginModal.hide();
+    });
+
+    // Prevent default form submission and show a message for Sign Up
+    document.querySelector('#signupModal form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Sign Up submitted!\nEmail: ' + document.getElementById('signupEmail').value);
+        var signupModal = bootstrap.Modal.getInstance(document.getElementById('signupModal'));
+        signupModal.hide();
+    });
+});
+
+/* Function to place an order */
+function placeOrder(productName, price) {
+    alert('Order placed for ' + productName + ' at ' + price);
+}    
+    </script>
